@@ -4,9 +4,10 @@
  m — кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
 """
 from random import randint
-n_set = set(randint(1, 5) for x in range(int(input('Введите кол-во чисел первого набора : '))))
+
+n_set = set(randint(1, 99) for x in range(int(input('Введите кол-во чисел первого набора : '))))
 print(n_set)
-m_set = set(randint(1, 5) for y in range(int(input('Введите кол-во чисел второго набора: '))))
+m_set = set(randint(1, 99) for y in range(int(input('Введите кол-во чисел второго набора: '))))
 print(m_set)
-s_set = sorted(n_set.intersection(m_set))
-print(*s_set, sep=", ")
+x_set = sorted(n_set.intersection(m_set))
+print(*x_set, sep=", ")
